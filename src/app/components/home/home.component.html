@@ -1,0 +1,22 @@
+<!-- <ul>
+  <li *ngFor="let pais of paises" >
+    {{pais.name}}
+  </li>
+</ul> -->
+
+<!-- <div class="card-columns">
+  <div class="card" *ngFor="let realease of newRealeases" >
+    <img class="card-img-top" [src]="realease.images | noimage" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{realease.name}}</h5>
+      <p class="card-text"> 
+        <span *ngFor="let artist of realease.artists"
+         class="badge badge-pill badge-primary">
+          {{artist.name}}
+        </span>
+      </p>
+    </div>
+  </div>
+</div> -->
+
+<app-cards [items]="newRealeases"></app-cards>

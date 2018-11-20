@@ -5,13 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from "@angular/common/http";
 
+//Components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtistComponent } from './components/artist/artist.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import { NoimagePipe } from './pipes/noimage.pipe';
 import { CardsComponent } from './components/shared/cards/cards.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
+
+//pipes
+import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from "./pipes/domseguro.pipe";
 
 @NgModule({
   declarations: [
@@ -21,7 +26,9 @@ import { CardsComponent } from './components/shared/cards/cards.component';
     ArtistComponent,
     NavbarComponent,
     NoimagePipe,
-    CardsComponent
+    DomseguroPipe,
+    CardsComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
